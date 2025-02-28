@@ -49,19 +49,19 @@ int main(void){
 
  //por razao desconhecida a variavel nao esta realizando a contagem
  //decidi retirar esse trecho e o trecho da linha 64 por esse motivo
- /*for(i=0; i < n; i++){
+ for(i=0; i < n; i++){
   if(idades[i] < 16){
    menor_de_16 = menor_de_16 + 1;
   }
- }*/
+ }
 
- porcentagem = (double) 100 * (menor_de_16 / n);
+ porcentagem = (double) menor_de_16 *100 / n;
 
 
  //saida de dados
  printf("\nAltura media = %.2lf", media);
 
- /*printf("\nPessoas com menos de 16 anos = %lf", porcentagem);*/
+ printf("\nPessoas com menos de 16 anos = %.2lf", porcentagem);
 
  //nomes das pessoas com menos de 16 anos
  for(i=0; i < n; i++){
